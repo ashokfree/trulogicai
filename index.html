@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TruLogic AI — Enterprise AI, Built Different</title>
-  <meta name="description" content="TruLogic AI delivers enterprise-grade AI tools — support bots, document intelligence, LLM load testing, and AI governance — at low cost with full in-house data residency." />
+  <title>TruLogic AI — Enterprise AI, Built for Every Business</title>
+  <meta name="description" content="TruLogic AI delivers private, affordable AI tools — support automation, document intelligence, business data querying, LLM load testing and governance. Your data stays yours." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,15 +15,15 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <a href="#" class="nav-logo">
-      <svg class="logo-svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-        <rect width="38" height="38" rx="10" fill="url(#logoGrad)"/>
-        <path d="M9 11 L19 11 L19 15 L13 15 L13 27 L9 27 Z" fill="#fff"/>
-        <path d="M17 11 L29 11 L29 15 L25 15 L25 27 L21 27 L21 15 L17 15 Z" fill="rgba(255,255,255,0.55)"/>
-        <circle cx="27" cy="25" r="4.5" fill="#00FFB2"/>
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+        <rect width="38" height="38" rx="10" fill="url(#navLogo)"/>
+        <path d="M9 11L19 11L19 15L13 15L13 27L9 27Z" fill="white"/>
+        <path d="M17 11L29 11L29 15L25 15L25 27L21 27L21 15L17 15Z" fill="rgba(255,255,255,0.5)"/>
+        <circle cx="27" cy="25" r="4" fill="#00FFB2"/>
         <defs>
-          <linearGradient id="logoGrad" x1="0" y1="0" x2="38" y2="38">
-            <stop offset="0%" stop-color="#6C63FF"/>
-            <stop offset="100%" stop-color="#0EA5E9"/>
+          <linearGradient id="navLogo" x1="0" y1="0" x2="38" y2="38">
+            <stop offset="0%" stop-color="#7C3AED"/>
+            <stop offset="100%" stop-color="#2563EB"/>
           </linearGradient>
         </defs>
       </svg>
@@ -34,7 +34,7 @@
       <li><a href="#frameworks">Frameworks</a></li>
       <li><a href="#why">Why Us</a></li>
       <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      <li><a href="#contact" class="nav-cta">Get Early Access</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -47,334 +47,388 @@
     <a href="#frameworks" onclick="closeMobile()">Frameworks</a>
     <a href="#why" onclick="closeMobile()">Why Us</a>
     <a href="#pricing" onclick="closeMobile()">Pricing</a>
-    <a href="#contact" onclick="closeMobile()">Contact Us</a>
+    <a href="#contact" onclick="closeMobile()">Get Early Access</a>
   </div>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg">
-      <div class="mesh"></div>
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
-      <div class="scanline"></div>
+      <div class="grid-mesh"></div>
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
     </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Now in Early Access · 5 Enterprise AI Tools
-      </div>
-      <h1 class="hero-title">
-        Enterprise AI.<br/>
-        <span class="grad-text">Built Different.</span>
-      </h1>
-      <p class="hero-sub">
-        Five production-ready AI tools covering support automation, document intelligence, LLM performance testing, governance, and red-teaming — all at low cost with 100% in-house data residency.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">
-          <span>Get Early Access</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#products" class="btn-ghost">Explore Products</a>
-      </div>
-      <div class="hero-pills">
-        <span class="pill">🤖 L1/L2 Support Bot</span>
-        <span class="pill">📄 Doc Extraction</span>
-        <span class="pill">🔍 Doc Comparer</span>
-        <span class="pill">⚡ LLM Load Testing</span>
-        <span class="pill">🛡️ AI Governance</span>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hv-card hv-card--main">
-        <div class="hv-header">
-          <div class="hv-dots"><span></span><span></span><span></span></div>
-          <span class="hv-title mono">trulogic.governance</span>
-          <span class="hv-live"><span></span>LIVE</span>
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="live-dot"></span>
+          Now in Early Access &nbsp;·&nbsp; 5 AI Products
         </div>
-        <div class="hv-body">
-          <div class="score-row">
-            <span class="score-label">Safety Score</span>
-            <div class="score-bar"><div class="score-fill" style="width:87%;background:linear-gradient(90deg,#6C63FF,#00FFB2)"></div></div>
-            <span class="score-val pass">4.4 / 5</span>
-          </div>
-          <div class="score-row">
-            <span class="score-label">Bias Risk</span>
-            <div class="score-bar"><div class="score-fill" style="width:18%;background:linear-gradient(90deg,#00FFB2,#0EA5E9)"></div></div>
-            <span class="score-val pass">0.12</span>
-          </div>
-          <div class="score-row">
-            <span class="score-label">Compliance</span>
-            <div class="score-bar"><div class="score-fill" style="width:96%;background:linear-gradient(90deg,#F59E0B,#EF4444)"></div></div>
-            <span class="score-val warn">4.8 / 5</span>
-          </div>
-          <div class="verdict pass-verdict">
-            <span>✓ PASS</span> — Decision: Deploy
-          </div>
+        <h1 class="hero-title">
+          AI That Works for<br/>
+          <span class="hero-highlight">Every Business.</span><br/>
+          <span class="hero-sub-title">Not Just Enterprise Giants.</span>
+        </h1>
+        <p class="hero-desc">
+          Powerful AI tools your team can actually use — from automating support tickets to asking questions from your own private documents and business data. All running on your infrastructure. Your data never leaves.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            Get Early Access
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#products" class="btn-outline">See All Products</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><span class="trust-icon">🔒</span>Data stays in-house</div>
+          <div class="trust-sep"></div>
+          <div class="trust-item"><span class="trust-icon">💰</span>Low cost or free</div>
+          <div class="trust-sep"></div>
+          <div class="trust-item"><span class="trust-icon">⚡</span>Deploy in days</div>
         </div>
       </div>
-      <div class="hv-card hv-card--side">
-        <div class="mono small-label">LLM_TPS [3k users]</div>
-        <div class="big-num">2,847<span>tok/s</span></div>
-        <div class="mini-bars">
-          <div class="mbar" style="height:30%"></div>
-          <div class="mbar" style="height:55%"></div>
-          <div class="mbar" style="height:70%"></div>
-          <div class="mbar" style="height:90%"></div>
-          <div class="mbar" style="height:80%"></div>
-          <div class="mbar" style="height:95%"></div>
-          <div class="mbar active" style="height:100%"></div>
+
+      <div class="hero-visual">
+        <!-- DocMind card -->
+        <div class="hcard hcard--top">
+          <div class="hcard-header">
+            <div class="hcard-icon" style="background:linear-gradient(135deg,#7C3AED,#A855F7)">🧠</div>
+            <div>
+              <div class="hcard-title">TruLogic DocMind</div>
+              <div class="hcard-sub">Private Document AI</div>
+            </div>
+            <div class="hcard-live"><span></span>Active</div>
+          </div>
+          <div class="hcard-query">
+            <div class="query-label">Query</div>
+            <div class="query-text">"What are the penalty clauses in our vendor contracts?"</div>
+          </div>
+          <div class="hcard-answer">
+            <div class="answer-dot"></div>
+            <div class="answer-text">Found 3 relevant clauses across 12 contracts. Penalty ranges from 2%–5% of contract value for delays exceeding 30 days. <span class="answer-source">Source: VendorAgreement_2024.pdf, p.7</span></div>
+          </div>
         </div>
-        <div class="mono small-label" style="color:#00FFB2">↑ 14% vs baseline</div>
+        <!-- BizAI card -->
+        <div class="hcard hcard--bottom">
+          <div class="hcard-header">
+            <div class="hcard-icon" style="background:linear-gradient(135deg,#0EA5E9,#06B6D4)">📊</div>
+            <div>
+              <div class="hcard-title">TruLogic BizAI</div>
+              <div class="hcard-sub">Business Data AI</div>
+            </div>
+          </div>
+          <div class="hcard-query">
+            <div class="query-label">Query</div>
+            <div class="query-text">"Which customers haven't paid invoices over 60 days?"</div>
+          </div>
+          <div class="hcard-table">
+            <div class="htrow header"><span>Customer</span><span>Amount</span><span>Days</span></div>
+            <div class="htrow"><span>Mehta Traders</span><span>₹2.4L</span><span class="red">78d</span></div>
+            <div class="htrow"><span>Raj Enterprises</span><span>₹1.1L</span><span class="red">65d</span></div>
+            <div class="htrow"><span>Sunita & Co.</span><span>₹89K</span><span class="amber">61d</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTS SECTION -->
+  <!-- WHO IS THIS FOR -->
+  <section class="for-who">
+    <div class="container">
+      <div class="section-eyebrow">Who Is This For</div>
+      <h2 class="section-title center">Copilot Is Not For Everyone.<br/><span class="grad">We Are.</span></h2>
+      <div class="for-grid">
+        <div class="for-card">
+          <div class="for-icon">⚖️</div>
+          <h4>Law Firms & CA Firms</h4>
+          <p>Client files, case notes, contracts and judgements — all searchable privately. No data ever reaches Microsoft or OpenAI servers.</p>
+        </div>
+        <div class="for-card">
+          <div class="for-icon">🏭</div>
+          <h4>Trading & Manufacturing</h4>
+          <p>Query your Tally data, invoices, and inventory in plain English. Get answers your accountant used to take a week to produce.</p>
+        </div>
+        <div class="for-card">
+          <div class="for-icon">🏥</div>
+          <h4>Healthcare & Clinics</h4>
+          <p>Patient protocols, treatment guidelines, compliance documents — instantly searchable. Patient data stays on your own server.</p>
+        </div>
+        <div class="for-card">
+          <div class="for-icon">🏢</div>
+          <h4>IT & Support Teams</h4>
+          <p>Automate L1/L2 tickets, reduce agent load by 80%, and give your team an AI that knows your systems inside out.</p>
+        </div>
+        <div class="for-card">
+          <div class="for-icon">📋</div>
+          <h4>Compliance & HR</h4>
+          <p>Policy documents, SOPs, audit trails — all queryable. New joiners get answers instantly. Compliance teams stay audit-ready.</p>
+        </div>
+        <div class="for-card">
+          <div class="for-icon">🤖</div>
+          <h4>AI / ML Teams</h4>
+          <p>Load test your LLMs to 3,000 users. Govern AI outputs with full audit trails. Build responsibly from day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
   <section class="products" id="products">
     <div class="container">
-      <div class="section-eyebrow">Core Tools</div>
-      <h2 class="section-title">AI Tools That Earn Their Keep</h2>
-      <p class="section-sub">Purpose-built for production. Plug into your stack in days, not quarters.</p>
+      <div class="section-eyebrow">Core Products</div>
+      <h2 class="section-title center">Three Tools. Real Problems Solved.</h2>
+      <p class="section-sub">No jargon. No vendor lock-in. Just tools that do what they say.</p>
 
-      <div class="products-grid">
-
-        <!-- Card 1 -->
-        <div class="pcard" data-color="#6C63FF">
-          <div class="pcard-glow" style="background:radial-gradient(circle at top left, rgba(108,99,255,0.25), transparent 70%)"></div>
-          <div class="pcard-top">
-            <div class="pcard-icon" style="background:rgba(108,99,255,0.15);border-color:rgba(108,99,255,0.3)">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <circle cx="14" cy="9" r="4" fill="#6C63FF"/>
-                <path d="M6 22c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#6C63FF" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="22" cy="7" r="3" fill="#00FFB2"/>
-              </svg>
-            </div>
-            <span class="pcard-badge" style="background:rgba(108,99,255,0.15);color:#A78BFA;border-color:rgba(108,99,255,0.3)">Most Popular</span>
-          </div>
-          <h3>L1 / L2 Support Bot</h3>
-          <p>Deflect up to 80% of support tickets automatically with context-aware AI trained on your own knowledge base — across chat, email, and ticketing systems.</p>
-          <ul class="pcard-list">
-            <li><span class="check" style="color:#6C63FF">✓</span> Multi-channel (chat, email, tickets)</li>
-            <li><span class="check" style="color:#6C63FF">✓</span> Smart escalation to human agents</li>
-            <li><span class="check" style="color:#6C63FF">✓</span> Learns from every interaction</li>
-            <li><span class="check" style="color:#6C63FF">✓</span> 30+ language support</li>
+      <!-- Product 1: Support Bot -->
+      <div class="product-row">
+        <div class="product-text">
+          <div class="product-num">01</div>
+          <div class="product-tag" style="background:rgba(99,102,241,0.12);color:#818CF8;border-color:rgba(99,102,241,0.25)">L1 / L2 Support Bot</div>
+          <h3>Your support team's AI co-worker</h3>
+          <p>Stop your support agents from answering the same questions 50 times a day. The Support Bot handles routine queries automatically — password resets, software requests, access issues — and only escalates the ones that genuinely need a human.</p>
+          <ul class="product-bullets">
+            <li><span style="color:#818CF8">✓</span> Deflects up to 80% of L1/L2 tickets</li>
+            <li><span style="color:#818CF8">✓</span> Works on chat, email, ticketing systems</li>
+            <li><span style="color:#818CF8">✓</span> Trains on your own knowledge base</li>
+            <li><span style="color:#818CF8">✓</span> Smart escalation to human agents</li>
+            <li><span style="color:#818CF8">✓</span> Supports 30+ languages</li>
           </ul>
-          <a href="#contact" class="pcard-link" style="color:#A78BFA">Request Demo →</a>
+          <a href="#contact" class="product-cta" style="color:#818CF8;border-color:rgba(99,102,241,0.3)">Request a Demo →</a>
         </div>
-
-        <!-- Card 2 -->
-        <div class="pcard" data-color="#0EA5E9">
-          <div class="pcard-glow" style="background:radial-gradient(circle at top left, rgba(14,165,233,0.2), transparent 70%)"></div>
-          <div class="pcard-top">
-            <div class="pcard-icon" style="background:rgba(14,165,233,0.12);border-color:rgba(14,165,233,0.3)">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <rect x="5" y="3" width="14" height="20" rx="2" stroke="#0EA5E9" stroke-width="1.8"/>
-                <path d="M8 9h8M8 13h8M8 17h5" stroke="#0EA5E9" stroke-width="1.5" stroke-linecap="round"/>
-                <circle cx="21" cy="20" r="4" fill="#071626" stroke="#00FFB2" stroke-width="1.5"/>
-                <path d="M19.5 20l1.2 1.5L23 18.5" stroke="#00FFB2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+        <div class="product-visual">
+          <div class="chat-demo">
+            <div class="chat-header">
+              <div class="cdots"><span></span><span></span><span></span></div>
+              <span class="cmono">TruLogic Support Bot</span>
+              <span class="clive"><span></span>Online</span>
+            </div>
+            <div class="chat-body">
+              <div class="cmsg user">My VPN keeps disconnecting. Help!</div>
+              <div class="cmsg bot"><span class="cbot-icon">⚡</span><span>Try switching from UDP to TCP in your VPN settings. Go to <strong>GlobalProtect → Settings → Protocol → TCP</strong>. Still failing? I can raise a ticket for you.</span></div>
+              <div class="cmsg user">That worked! Thanks</div>
+              <div class="cmsg bot"><span class="cbot-icon">⚡</span><span>Great! Ticket avoided 🎉 Anything else I can help with?</span></div>
+            </div>
+            <div class="chat-input-bar">
+              <span>Type a message...</span>
+              <div class="csend">→</div>
             </div>
           </div>
-          <h3>Document Extraction Bot</h3>
-          <p>Transform unstructured PDFs, scanned docs, invoices, and contracts into clean structured data — with OCR, custom field mapping, and full audit trails.</p>
-          <ul class="pcard-list">
-            <li><span class="check" style="color:#0EA5E9">✓</span> OCR + AI-powered extraction</li>
-            <li><span class="check" style="color:#0EA5E9">✓</span> Custom field mapping</li>
-            <li><span class="check" style="color:#0EA5E9">✓</span> JSON, CSV, ERP export</li>
-            <li><span class="check" style="color:#0EA5E9">✓</span> Compliance audit trail</li>
-          </ul>
-          <a href="#contact" class="pcard-link" style="color:#38BDF8">Request Demo →</a>
         </div>
+      </div>
 
-        <!-- Card 3 -->
-        <div class="pcard" data-color="#F59E0B">
-          <div class="pcard-glow" style="background:radial-gradient(circle at top left, rgba(245,158,11,0.15), transparent 70%)"></div>
-          <div class="pcard-top">
-            <div class="pcard-icon" style="background:rgba(245,158,11,0.12);border-color:rgba(245,158,11,0.3)">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <rect x="2" y="5" width="10" height="18" rx="2" stroke="#F59E0B" stroke-width="1.8"/>
-                <rect x="16" y="5" width="10" height="18" rx="2" stroke="#F59E0B" stroke-width="1.8"/>
-                <path d="M12 9h4M12 14h4M12 19h4" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 1"/>
-                <circle cx="14" cy="14" r="2" fill="#F59E0B"/>
-              </svg>
+      <!-- Product 2: DocMind -->
+      <div class="product-row reverse">
+        <div class="product-text">
+          <div class="product-num">02</div>
+          <div class="product-tag" style="background:rgba(124,58,237,0.12);color:#A78BFA;border-color:rgba(124,58,237,0.25)">TruLogic DocMind</div>
+          <h3>Ask anything from your private documents</h3>
+          <p>Every business sits on years of documents nobody can find — contracts, policies, case files, manuals, reports. DocMind indexes all of it privately and lets your team ask questions in plain language. Instantly. Without sending a single file to any external server.</p>
+          <p class="product-ideal">Ideal for: <strong>Law firms · CA firms · Healthcare · HR · Compliance · Any document-heavy business</strong></p>
+          <ul class="product-bullets">
+            <li><span style="color:#A78BFA">✓</span> Works with PDFs, Word, Excel, scanned docs</li>
+            <li><span style="color:#A78BFA">✓</span> Cites exact source and page number</li>
+            <li><span style="color:#A78BFA">✓</span> Runs entirely on your own server</li>
+            <li><span style="color:#A78BFA">✓</span> No data sent to OpenAI, Microsoft or anyone</li>
+            <li><span style="color:#A78BFA">✓</span> Multi-user access with role permissions</li>
+          </ul>
+          <a href="#contact" class="product-cta" style="color:#A78BFA;border-color:rgba(124,58,237,0.3)">Request a Demo →</a>
+        </div>
+        <div class="product-visual">
+          <div class="docmind-demo">
+            <div class="dm-header">
+              <div class="dm-icon">🧠</div>
+              <div>
+                <div class="dm-title">DocMind</div>
+                <div class="dm-sub">127 documents indexed · Private</div>
+              </div>
+            </div>
+            <div class="dm-queries">
+              <div class="dm-query active">
+                <div class="dm-q">"Force majeure clauses in vendor contracts"</div>
+                <div class="dm-a">Found in 4 documents. Standard 30-day notice period applies. <span class="dm-src">Contract_2024_v3.pdf · p.12</span></div>
+              </div>
+              <div class="dm-query">
+                <div class="dm-q">"GST compliance checklist Q3"</div>
+                <div class="dm-a">8 items identified from your SOP. 2 pending action. <span class="dm-src">GST_SOP_2024.pdf · p.4</span></div>
+              </div>
+              <div class="dm-query">
+                <div class="dm-q">"Employee leave policy for maternity"</div>
+                <div class="dm-a">26 weeks paid leave per Maternity Benefit Act. <span class="dm-src">HR_Policy_v7.pdf · p.19</span></div>
+              </div>
             </div>
           </div>
-          <h3>Document Comparer</h3>
-          <p>Detect changes, discrepancies, and anomalies across document versions, contracts, or supplier submissions — with clause-level diff and risk scoring.</p>
-          <ul class="pcard-list">
-            <li><span class="check" style="color:#F59E0B">✓</span> Side-by-side diff visualisation</li>
-            <li><span class="check" style="color:#F59E0B">✓</span> Clause-level analysis</li>
-            <li><span class="check" style="color:#F59E0B">✓</span> Risk flagging & scoring</li>
-            <li><span class="check" style="color:#F59E0B">✓</span> Batch comparison</li>
-          </ul>
-          <a href="#contact" class="pcard-link" style="color:#FCD34D">Request Demo →</a>
         </div>
+      </div>
 
+      <!-- Product 3: BizAI -->
+      <div class="product-row">
+        <div class="product-text">
+          <div class="product-num">03</div>
+          <div class="product-tag" style="background:rgba(14,165,233,0.12);color:#38BDF8;border-color:rgba(14,165,233,0.25)">TruLogic BizAI</div>
+          <h3>Ask your business data anything</h3>
+          <p>Your business data is locked inside Tally, Excel sheets, and ERP exports. Getting answers means calling your accountant or waiting for a report. BizAI connects to your data and answers business questions in plain English — instantly, accurately, privately.</p>
+          <p class="product-ideal">Ideal for: <strong>Trading companies · Manufacturers · Distributors · Retail chains · Any business running on Tally + Excel</strong></p>
+          <ul class="product-bullets">
+            <li><span style="color:#38BDF8">✓</span> Connects to Tally, Excel, CSV, ERP exports</li>
+            <li><span style="color:#38BDF8">✓</span> Plain English — no SQL, no formulas</li>
+            <li><span style="color:#38BDF8">✓</span> Financial data stays on your premises</li>
+            <li><span style="color:#38BDF8">✓</span> Shows workings — not just answers</li>
+            <li><span style="color:#38BDF8">✓</span> Works offline — no internet required</li>
+          </ul>
+          <a href="#contact" class="product-cta" style="color:#38BDF8;border-color:rgba(14,165,233,0.3)">Request a Demo →</a>
+        </div>
+        <div class="product-visual">
+          <div class="bizai-demo">
+            <div class="biz-header">
+              <div class="biz-icon">📊</div>
+              <div>
+                <div class="biz-title">BizAI</div>
+                <div class="biz-sub">Connected to Tally · FY 2024–25</div>
+              </div>
+            </div>
+            <div class="biz-questions">
+              <div class="biz-q-item">
+                <div class="bq-question">Which customers have overdue payments?</div>
+                <div class="bq-answer">
+                  <div class="biz-row header"><span>Customer</span><span>Amount</span><span>Overdue</span></div>
+                  <div class="biz-row"><span>Mehta Traders</span><span>₹2.4L</span><span class="tag-red">78 days</span></div>
+                  <div class="biz-row"><span>Raj Enterprises</span><span>₹1.1L</span><span class="tag-red">65 days</span></div>
+                  <div class="biz-row"><span>Sunita & Co.</span><span>₹89K</span><span class="tag-amber">61 days</span></div>
+                </div>
+              </div>
+              <div class="biz-q-item" style="opacity:0.6">
+                <div class="bq-question">Top 3 products by margin this quarter?</div>
+                <div class="bq-short">Product A (34%) · Product C (28%) · Product F (22%)</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FRAMEWORKS SECTION -->
+  <!-- FRAMEWORKS -->
   <section class="frameworks" id="frameworks">
     <div class="container">
       <div class="section-eyebrow">Developer Frameworks</div>
-      <h2 class="section-title">Go Deeper with Our OSS Frameworks</h2>
-      <p class="section-sub">Open, extensible frameworks for teams that need full control over LLM performance and safety.</p>
-
+      <h2 class="section-title center">For Teams Building with AI</h2>
+      <p class="section-sub">Open, extensible frameworks for engineering and AI teams who need full control over LLM performance and safety.</p>
       <div class="fw-grid">
 
-        <!-- LLM Load Testing -->
         <div class="fw-card">
-          <div class="fw-header">
-            <div class="fw-icon-wrap" style="background:linear-gradient(135deg,#0EA5E9,#6C63FF)">
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-                <path d="M3 20 L7 12 L11 16 L16 7 L20 13 L23 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="23" cy="8" r="2" fill="white"/>
-              </svg>
-            </div>
+          <div class="fw-top">
+            <div class="fw-icon" style="background:linear-gradient(135deg,#0EA5E9,#6366F1)">⚡</div>
             <div>
               <h3>LLM Load Testing</h3>
-              <span class="fw-tag">Locust Framework</span>
+              <span class="fw-chip">Locust Framework · Open Source</span>
             </div>
           </div>
-          <p>End-to-end load testing for LLM API endpoints. Scale from 1 to 3,000 concurrent users on a single VM or AKS cluster — capturing token throughput, TTFT, and quality scores.</p>
-
-          <div class="fw-metrics">
-            <div class="fw-metric">
-              <span class="fw-metric-val" style="color:#0EA5E9">3,000</span>
-              <span class="fw-metric-label">Max Concurrent Users</span>
-            </div>
-            <div class="fw-metric">
-              <span class="fw-metric-val" style="color:#6C63FF">4</span>
-              <span class="fw-metric-label">Test Phases</span>
-            </div>
-            <div class="fw-metric">
-              <span class="fw-metric-val" style="color:#00FFB2">4</span>
-              <span class="fw-metric-label">Prompt Strategies</span>
-            </div>
+          <p>Stress-test your LLM APIs before going live. Scale from 1 to 3,000 concurrent users on a single VM or AKS cluster. Measures token throughput, TTFT, and quality scores with anti-cache prompt diversity.</p>
+          <div class="fw-stats">
+            <div class="fw-stat"><span style="color:#0EA5E9">3,000</span><small>Max Users</small></div>
+            <div class="fw-stat"><span style="color:#6366F1">4</span><small>Test Phases</small></div>
+            <div class="fw-stat"><span style="color:#00FFB2">4</span><small>Prompt Strategies</small></div>
           </div>
-
-          <div class="fw-features">
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#0EA5E9"></span>Token throughput (TPS) & TTFT measurement</div>
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#6C63FF"></span>Anti-cache prompt diversity (hybrid strategy)</div>
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#00FFB2"></span>Multi-key rotation with 429 cooldown</div>
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#F59E0B"></span>AKS cluster deployment + worker autoscaling</div>
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#EF4444"></span>Live dashboard: TPS, quality, key health</div>
-          </div>
-
-          <div class="fw-code">
-            <span class="mono code-comment"># Quick smoke test</span><br/>
-            <span class="mono"><span class="kw">python</span> -m locust -f llm_locustfile.py \</span><br/>
-            <span class="mono">&nbsp;&nbsp;--users <span class="num">50</span> --spawn-rate <span class="num">5</span> --run-time 10m</span>
-          </div>
-
           <div class="fw-phases">
-            <span class="phase" style="background:rgba(0,255,178,0.1);border-color:rgba(0,255,178,0.3);color:#00FFB2">Smoke</span>
-            <span class="phase" style="background:rgba(14,165,233,0.1);border-color:rgba(14,165,233,0.3);color:#38BDF8">Ramp</span>
-            <span class="phase" style="background:rgba(245,158,11,0.1);border-color:rgba(245,158,11,0.3);color:#FCD34D">Stress</span>
-            <span class="phase" style="background:rgba(239,68,68,0.1);border-color:rgba(239,68,68,0.3);color:#F87171">Soak</span>
+            <span class="fphase green">Smoke</span>
+            <span class="fphase blue">Ramp</span>
+            <span class="fphase amber">Stress</span>
+            <span class="fphase red">Soak</span>
           </div>
-
-          <a href="#contact" class="fw-cta">Get Access →</a>
+          <div class="fw-code">
+            <span class="cm"># Run a ramp test headless</span><br/>
+            python -m locust -f llm_locustfile.py \<br/>
+            &nbsp;&nbsp;--users <span class="cn">500</span> --spawn-rate <span class="cn">10</span> --run-time 15m
+          </div>
+          <a href="#contact" class="fw-link">Get Access →</a>
         </div>
 
-        <!-- LLM Governance -->
-        <div class="fw-card fw-card--accent">
-          <div class="fw-header">
-            <div class="fw-icon-wrap" style="background:linear-gradient(135deg,#10B981,#6C63FF)">
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-                <path d="M13 3L4 7v7c0 5 3.9 9.7 9 11 5.1-1.3 9-6 9-11V7L13 3z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
-                <path d="M9 13l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
+        <div class="fw-card fw-card--green">
+          <div class="fw-top">
+            <div class="fw-icon" style="background:linear-gradient(135deg,#10B981,#6366F1)">🛡️</div>
             <div>
-              <h3>LLM Governance Framework</h3>
-              <span class="fw-tag" style="background:rgba(16,185,129,0.15);color:#34D399;border-color:rgba(16,185,129,0.3)">Enterprise Grade</span>
+              <h3>LLM Governance</h3>
+              <span class="fw-chip" style="background:rgba(16,185,129,0.12);color:#34D399;border-color:rgba(16,185,129,0.3)">Enterprise Grade · Auditable</span>
             </div>
           </div>
-          <p>Enterprise-grade evaluation and risk management platform. Enforces constitutional AI principles, applies deterministic scoring, and produces full governance audit reports.</p>
-
-          <div class="fw-metrics">
-            <div class="fw-metric">
-              <span class="fw-metric-val" style="color:#10B981">1–5</span>
-              <span class="fw-metric-label">Score Scale</span>
-            </div>
-            <div class="fw-metric">
-              <span class="fw-metric-val" style="color:#6C63FF">3</span>
-              <span class="fw-metric-label">Decision Outcomes</span>
-            </div>
-            <div class="fw-metric">
-              <span class="fw-metric-val" style="color:#00FFB2">100%</span>
-              <span class="fw-metric-label">Auditable</span>
-            </div>
+          <p>Evaluate, score and govern AI outputs before and after deployment. Enforces constitutional AI policies, applies deterministic risk scoring, and produces structured audit reports. PASS / REVIEW / FAIL decisions with full traceability.</p>
+          <div class="fw-stats">
+            <div class="fw-stat"><span style="color:#10B981">1–5</span><small>Risk Scale</small></div>
+            <div class="fw-stat"><span style="color:#6366F1">3</span><small>Decision Types</small></div>
+            <div class="fw-stat"><span style="color:#00FFB2">100%</span><small>Auditable</small></div>
           </div>
-
-          <div class="fw-features">
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#10B981"></span>Constitutional prompt enforcement (YAML rules)</div>
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#6C63FF"></span>Multi-layer evaluator: behavioural + compliance</div>
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#00FFB2"></span>Deterministic risk scoring & normalization</div>
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#F59E0B"></span>PASS / REVIEW / FAIL governance decisions</div>
-            <div class="fw-feat"><span class="fw-feat-dot" style="background:#EF4444"></span>Hashed response logs + JSON audit reports</div>
-          </div>
-
-          <div class="fw-code">
-            <span class="mono code-comment"># Risk transformation</span><br/>
-            <span class="mono"><span class="kw">risk</span> = <span class="num">1</span> - (score / <span class="num">5.0</span>)</span><br/>
-            <span class="mono code-comment"># Score 5 → Risk 0.0 (deploy)</span>
-          </div>
-
           <div class="fw-phases">
-            <span class="phase" style="background:rgba(0,255,178,0.1);border-color:rgba(0,255,178,0.3);color:#00FFB2">✓ PASS</span>
-            <span class="phase" style="background:rgba(245,158,11,0.1);border-color:rgba(245,158,11,0.3);color:#FCD34D">⚠ REVIEW</span>
-            <span class="phase" style="background:rgba(239,68,68,0.1);border-color:rgba(239,68,68,0.3);color:#F87171">✗ FAIL</span>
+            <span class="fphase green">✓ PASS</span>
+            <span class="fphase amber">⚠ REVIEW</span>
+            <span class="fphase red">✗ FAIL</span>
           </div>
-
-          <a href="#contact" class="fw-cta" style="color:#34D399;border-color:rgba(16,185,129,0.4)">Get Access →</a>
+          <div class="fw-code">
+            <span class="cm"># Risk transformation formula</span><br/>
+            risk = <span class="cn">1</span> - (score / <span class="cn">5.0</span>)<br/>
+            <span class="cm"># Score 5 → Risk 0.0 → Deploy</span>
+          </div>
+          <a href="#contact" class="fw-link" style="color:#34D399;border-color:rgba(16,185,129,0.35)">Get Access →</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- WHY TRULOGIC -->
+  <!-- WHY -->
   <section class="why" id="why">
     <div class="container">
       <div class="why-inner">
         <div class="why-left">
           <div class="section-eyebrow">Why TruLogic AI</div>
-          <h2 class="section-title left">Enterprise Power.<br/>Startup Pricing.</h2>
-          <p class="why-desc">We built TruLogic AI because enterprise AI is too expensive, too opaque, and sends your data to third-party clouds you don't control. We think that's broken.</p>
+          <h2 class="section-title">The AI tools your business actually deserves.</h2>
+          <p>Microsoft Copilot costs ₹2,500–4,000 per user per month, requires expensive licences, and sends your data to US cloud servers. We built TruLogic AI for the businesses that can't afford that — and shouldn't have to.</p>
+          <div class="vs-box">
+            <div class="vs-col">
+              <div class="vs-head vs-head--bad">Others (Copilot etc.)</div>
+              <div class="vs-item bad">₹2,500–4,000/user/month</div>
+              <div class="vs-item bad">Data sent to US servers</div>
+              <div class="vs-item bad">Requires Microsoft 365 E3/E5</div>
+              <div class="vs-item bad">6–12 month rollout</div>
+              <div class="vs-item bad">Built for Fortune 500</div>
+            </div>
+            <div class="vs-col">
+              <div class="vs-head vs-head--good">TruLogic AI</div>
+              <div class="vs-item good">Low cost or free to start</div>
+              <div class="vs-item good">Data stays on your server</div>
+              <div class="vs-item good">No licence dependencies</div>
+              <div class="vs-item good">Live in days</div>
+              <div class="vs-item good">Built for every business</div>
+            </div>
+          </div>
           <a href="#contact" class="btn-primary">Talk to Our Team</a>
         </div>
         <div class="why-right">
           <div class="pillar">
-            <div class="pillar-icon" style="background:linear-gradient(135deg,rgba(108,99,255,0.2),rgba(108,99,255,0.05));border-color:rgba(108,99,255,0.3)">🔒</div>
+            <div class="pillar-icon" style="background:rgba(124,58,237,0.15);border-color:rgba(124,58,237,0.3)">🔒</div>
             <div>
-              <h4>100% In-House Data Residency</h4>
-              <p>Your data never leaves your infrastructure. Deploy on-premise or private cloud. GDPR-compliant by design.</p>
+              <h4>Your Data Never Leaves</h4>
+              <p>Every product runs on your own infrastructure. On-premise or private cloud. No exceptions. Fully DPDP and GDPR compliant by design.</p>
             </div>
           </div>
           <div class="pillar">
-            <div class="pillar-icon" style="background:linear-gradient(135deg,rgba(0,255,178,0.2),rgba(0,255,178,0.05));border-color:rgba(0,255,178,0.3)">💰</div>
+            <div class="pillar-icon" style="background:rgba(0,255,178,0.1);border-color:rgba(0,255,178,0.25)">💰</div>
             <div>
-              <h4>Low Cost or No Cost</h4>
-              <p>Usage-based pricing with generous free tiers. No surprise per-seat charges. Pay only for what you use.</p>
+              <h4>Priced for Real Businesses</h4>
+              <p>Free tiers that actually work. Usage-based pricing with no surprise per-seat charges. Start free, pay only when you scale.</p>
             </div>
           </div>
           <div class="pillar">
-            <div class="pillar-icon" style="background:linear-gradient(135deg,rgba(14,165,233,0.2),rgba(14,165,233,0.05));border-color:rgba(14,165,233,0.3)">⚡</div>
+            <div class="pillar-icon" style="background:rgba(14,165,233,0.12);border-color:rgba(14,165,233,0.25)">⚡</div>
             <div>
-              <h4>Production Reliability</h4>
-              <p>Engineered for scale — tested to 3,000 concurrent users. Built-in redundancy and graceful human fallback.</p>
+              <h4>No IT Department Needed</h4>
+              <p>Plain language interfaces. Simple setup. Your team gets answers on day one — not after a 6-month implementation project.</p>
             </div>
           </div>
           <div class="pillar">
-            <div class="pillar-icon" style="background:linear-gradient(135deg,rgba(245,158,11,0.2),rgba(245,158,11,0.05));border-color:rgba(245,158,11,0.3)">🔧</div>
+            <div class="pillar-icon" style="background:rgba(245,158,11,0.12);border-color:rgba(245,158,11,0.25)">🇮🇳</div>
             <div>
-              <h4>Days to Deploy, Not Months</h4>
-              <p>REST APIs, webhooks, and connectors for Slack, Teams, Jira, Salesforce. Up and running in days.</p>
+              <h4>Built for India</h4>
+              <p>Priced in rupees, compliant with Indian data laws (DPDP Act), and designed for how Indian businesses actually work — Tally, local ERPs, mixed document formats.</p>
             </div>
           </div>
         </div>
@@ -386,48 +440,54 @@
   <section class="pricing" id="pricing">
     <div class="container">
       <div class="section-eyebrow">Pricing</div>
-      <h2 class="section-title">Transparent. Accessible. Fair.</h2>
-      <p class="section-sub">Start free, scale as you grow. No lock-in, no hidden fees.</p>
+      <h2 class="section-title center">Start Free. Scale When Ready.</h2>
+      <p class="section-sub">No credit card. No hidden fees. No lock-in. Just tools that work.</p>
       <div class="pricing-grid">
-        <div class="pricing-card">
-          <div class="plan-name">Starter</div>
-          <div class="plan-price">Free <span>forever</span></div>
-          <p class="plan-desc">Ideal for pilots and small teams evaluating TruLogic AI.</p>
-          <ul class="plan-features">
+
+        <div class="pplan">
+          <div class="pplan-name">Starter</div>
+          <div class="pplan-price">Free <span>forever</span></div>
+          <p class="pplan-desc">Perfect for evaluating TruLogic AI with a small team.</p>
+          <ul class="pplan-features">
             <li>✓ Up to 500 queries/month</li>
-            <li>✓ 1 AI tool of your choice</li>
+            <li>✓ 1 product of your choice</li>
             <li>✓ Community support</li>
             <li>✓ Standard data residency</li>
           </ul>
-          <a href="#contact" class="btn-ghost full">Get Started Free</a>
+          <a href="#contact" class="btn-outline full">Start Free</a>
         </div>
-        <div class="pricing-card pricing-featured">
-          <div class="plan-badge">Most Chosen</div>
-          <div class="plan-name">Growth</div>
-          <div class="plan-price">Low Cost <span>per use</span></div>
-          <p class="plan-desc">For teams that need reliable, scalable AI tools across their stack.</p>
-          <ul class="plan-features">
+
+        <div class="pplan pplan--featured">
+          <div class="pplan-badge">Most Popular</div>
+          <div class="pplan-name">Growth</div>
+          <div class="pplan-price">Low Cost <span>per use</span></div>
+          <p class="pplan-desc">For growing teams that need reliable AI across their operations.</p>
+          <ul class="pplan-features">
             <li>✓ Unlimited queries</li>
-            <li>✓ All 5 tools + frameworks</li>
+            <li>✓ All 3 core products</li>
             <li>✓ Priority support</li>
-            <li>✓ Private cloud deployment</li>
+            <li>✓ Private cloud or on-premise</li>
             <li>✓ Custom integrations</li>
+            <li>✓ Developer frameworks access</li>
           </ul>
           <a href="#contact" class="btn-primary full">Get a Quote</a>
         </div>
-        <div class="pricing-card">
-          <div class="plan-name">Enterprise</div>
-          <div class="plan-price">Custom</div>
-          <p class="plan-desc">Full on-premise deployment with SLAs and dedicated support.</p>
-          <ul class="plan-features">
-            <li>✓ On-premise installation</li>
-            <li>✓ Full data sovereignty</li>
+
+        <div class="pplan">
+          <div class="pplan-name">Enterprise</div>
+          <div class="pplan-price">Custom</div>
+          <p class="pplan-desc">Full deployment, SLAs, and dedicated support for larger organisations.</p>
+          <ul class="pplan-features">
+            <li>✓ Full on-premise installation</li>
+            <li>✓ Complete data sovereignty</li>
             <li>✓ Dedicated account manager</li>
             <li>✓ Custom model fine-tuning</li>
-            <li>✓ 99.9% SLA guarantee</li>
+            <li>✓ 99.9% uptime SLA</li>
+            <li>✓ DPDP compliance support</li>
           </ul>
-          <a href="#contact" class="btn-ghost full">Contact Sales</a>
+          <a href="#contact" class="btn-outline full">Contact Sales</a>
         </div>
+
       </div>
     </div>
   </section>
@@ -438,57 +498,55 @@
       <div class="contact-inner">
         <div class="contact-left">
           <div class="section-eyebrow">Get In Touch</div>
-          <h2 class="section-title left">Ready to Get Started?</h2>
-          <p>Whether you need a demo, have a technical question, or are ready to deploy — we respond within 24 hours.</p>
+          <h2 class="section-title">Let's find out if TruLogic AI is right for you.</h2>
+          <p>No sales pitch. No pressure. Tell us your problem and we'll tell you honestly if we can help — and show you a live demo.</p>
           <a href="mailto:sales@trulogicai.com" class="contact-email">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5h14l-7 7-7-7z" stroke="#6C63FF" stroke-width="1.5" stroke-linejoin="round"/><path d="M3 5v10h14V5" stroke="#6C63FF" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M3 5h14l-7 7-7-7z" stroke="#7C3AED" stroke-width="1.5" stroke-linejoin="round"/><path d="M3 5v10h14V5" stroke="#7C3AED" stroke-width="1.5" stroke-linejoin="round"/></svg>
             sales@trulogicai.com
           </a>
-          <div class="contact-note">Early-access partners only. Limited spots available.</div>
-          <div class="contact-tools">
-            <div class="ct-label">Tools we can demo:</div>
-            <div class="ct-tags">
-              <span>L1/L2 Support Bot</span>
-              <span>Doc Extraction</span>
-              <span>Doc Comparer</span>
-              <span>LLM Load Testing</span>
-              <span>AI Governance</span>
+          <div class="contact-note">Early access partners only · Limited spots available</div>
+          <div class="contact-industries">
+            <div class="ci-label">We work with</div>
+            <div class="ci-tags">
+              <span>Law Firms</span><span>CA Firms</span><span>Healthcare</span>
+              <span>Manufacturing</span><span>Trading</span><span>IT Teams</span>
+              <span>HR & Compliance</span><span>AI/ML Teams</span>
             </div>
           </div>
         </div>
         <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-group">
-              <label>Name</label>
-              <input type="text" placeholder="Your full name" required />
+              <label>Your Name <span class="req">*</span></label>
+              <input type="text" placeholder="Full name" required />
             </div>
             <div class="form-group">
-              <label>Company</label>
+              <label>Company / Firm</label>
               <input type="text" placeholder="Company name" />
             </div>
           </div>
           <div class="form-group">
-            <label>Email</label>
+            <label>Email <span class="req">*</span></label>
             <input type="email" placeholder="work@company.com" required />
           </div>
           <div class="form-group">
             <label>I'm interested in</label>
             <select>
-              <option value="">Select a product / framework</option>
+              <option value="">Select a product</option>
               <option>L1/L2 Support Bot</option>
-              <option>Document Extraction Bot</option>
-              <option>Document Comparer</option>
+              <option>TruLogic DocMind — Private Document AI</option>
+              <option>TruLogic BizAI — Business Data AI</option>
               <option>LLM Load Testing Framework</option>
               <option>LLM Governance Framework</option>
-              <option>All Products / Enterprise</option>
+              <option>Full Suite / Enterprise</option>
             </select>
           </div>
           <div class="form-group">
-            <label>Message</label>
-            <textarea placeholder="Tell us about your use case..." rows="4"></textarea>
+            <label>Tell us your problem</label>
+            <textarea placeholder="What challenge are you trying to solve? The more specific the better..." rows="4"></textarea>
           </div>
-          <button type="submit" class="btn-primary full submit-btn">Send Message</button>
-          <div class="form-success" id="formSuccess">✓ Message sent! We'll be in touch within 24 hours.</div>
+          <button type="submit" class="btn-primary full">Send Message</button>
+          <div class="form-success" id="formSuccess">✓ Got it! We'll be in touch within 24 hours.</div>
         </form>
       </div>
     </div>
@@ -499,30 +557,25 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <a href="#" class="nav-logo">
+          <a href="#" class="nav-logo" style="margin-bottom:10px;display:inline-flex">
             <svg width="32" height="32" viewBox="0 0 38 38" fill="none">
-              <rect width="38" height="38" rx="10" fill="url(#lg2)"/>
-              <path d="M9 11 L19 11 L19 15 L13 15 L13 27 L9 27 Z" fill="#fff"/>
-              <path d="M17 11 L29 11 L29 15 L25 15 L25 27 L21 27 L21 15 L17 15 Z" fill="rgba(255,255,255,0.55)"/>
-              <circle cx="27" cy="25" r="4.5" fill="#00FFB2"/>
-              <defs>
-                <linearGradient id="lg2" x1="0" y1="0" x2="38" y2="38">
-                  <stop offset="0%" stop-color="#6C63FF"/>
-                  <stop offset="100%" stop-color="#0EA5E9"/>
-                </linearGradient>
-              </defs>
+              <rect width="38" height="38" rx="9" fill="url(#footLogo)"/>
+              <path d="M9 11L19 11L19 15L13 15L13 27L9 27Z" fill="white"/>
+              <path d="M17 11L29 11L29 15L25 15L25 27L21 27L21 15L17 15Z" fill="rgba(255,255,255,0.5)"/>
+              <circle cx="27" cy="25" r="3.5" fill="#00FFB2"/>
+              <defs><linearGradient id="footLogo" x1="0" y1="0" x2="38" y2="38"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#2563EB"/></linearGradient></defs>
             </svg>
             <span class="logo-text">TruLogic<span class="logo-ai">AI</span></span>
           </a>
-          <p class="footer-tagline">Intelligence Without Compromise.</p>
+          <p class="footer-tag">AI that works for every business.<br/>Not just enterprise giants.</p>
           <p class="footer-copy">© 2025 TruLogic AI. All rights reserved.</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
             <h5>Products</h5>
             <a href="#products">L1/L2 Support Bot</a>
-            <a href="#products">Document Extraction</a>
-            <a href="#products">Document Comparer</a>
+            <a href="#products">TruLogic DocMind</a>
+            <a href="#products">TruLogic BizAI</a>
           </div>
           <div class="footer-col">
             <h5>Frameworks</h5>
@@ -531,7 +584,7 @@
           </div>
           <div class="footer-col">
             <h5>Company</h5>
-            <a href="#why">Why TruLogic</a>
+            <a href="#why">Why TruLogic AI</a>
             <a href="#pricing">Pricing</a>
             <a href="#contact">Contact</a>
           </div>
