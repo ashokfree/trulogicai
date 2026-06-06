@@ -93,18 +93,27 @@ img{max-width:100%}
   background:var(--white);
   position:relative;
   overflow:hidden;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
 }
-.hero::before{
-  content:'';position:absolute;top:0;left:0;right:0;bottom:0;
-  background-image:radial-gradient(circle at 1px 1px, var(--border) 1px, transparent 0);
-  background-size:32px 32px;
-  opacity:.5;pointer-events:none;
+.hero canvas {
+  position:absolute!important;
+  top:0;left:0;width:100%!important;height:100%!important;
+  z-index:0;pointer-events:none;opacity:0.85;
+}
+.hero .container{position:relative;z-index:1}
+@keyframes heroFadeUp{
+  from{opacity:0;transform:translateY(24px)}
+  to{opacity:1;transform:translateY(0)}
 }
 .hero-inner{
   display:grid;grid-template-columns:1fr 1fr;
   align-items:center;gap:64px;
   position:relative;z-index:1;
 }
+.hero-content{animation:heroFadeUp 0.8s ease both}
+.hero-visual{animation:heroFadeUp 0.9s 0.15s ease both}
 .hero-label{
   display:inline-flex;align-items:center;gap:8px;
   background:var(--accent-bg);color:var(--accent);

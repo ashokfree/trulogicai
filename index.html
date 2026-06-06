@@ -65,7 +65,7 @@
   </div>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="vanta-hero">
     <div class="container">
       <div class="hero-inner">
         <div class="hero-content">
@@ -576,5 +576,61 @@
   </footer>
 
   <script src="main.js"></script>
+
+  <!-- THREE.js + Vanta HALO -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+  <script>
+    // Vanta HALO — light mode, subtle green accent matching brand
+    VANTA.HALO({
+      el: "#vanta-hero",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      baseColor: 0xffffff,
+      backgroundColor: 0xffffff,
+      amplitudeFactor: 1.5,
+      xOffset: 0.15,
+      yOffset: -0.1,
+      size: 1.8,
+    });
+
+    // Scroll reveal animations
+    const reveals = document.querySelectorAll(
+      '.for-card, .product-row, .fw-card, .pillar, .pplan, .hv-card'
+    );
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, i * 60);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    reveals.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      revealObserver.observe(el);
+    });
+
+    // Hero content fade in on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const heroContent = document.querySelector('.hero-content');
+      const heroVisual = document.querySelector('.hero-visual');
+      if (heroContent) {
+        heroContent.style.animation = 'heroFadeUp 0.8s ease both';
+      }
+      if (heroVisual) {
+        heroVisual.style.animation = 'heroFadeUp 0.9s 0.15s ease both';
+      }
+    });
+  </script>
 </body>
 </html>
