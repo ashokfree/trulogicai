@@ -3,88 +3,205 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — AI Insights for Indian Businesses | TruLogic AI</title>
-  <meta name="description" content="Practical AI insights for Indian businesses — support automation, document intelligence, business data AI, LLM governance. Written by the TruLogic AI team." />
+  <title>Blog — AI Insights for Every Business | TruLogic AI</title>
+  <meta name="description" content="Practical AI insights for businesses — support automation, document intelligence, business data AI, LLM governance. Written by the TruLogic AI team." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://trulogicai.com/blog/" />
+  <link rel="icon" type="image/png" href="/trulogicai-logo-square.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--bg:#060C17;--surface:#0B1426;--card:#101E35;--purple:#7C3AED;--white:#F1F5F9;--muted:#64748B;--border:rgba(255,255,255,0.07);--font:'Outfit',sans-serif}
-    body{font-family:var(--font);background:var(--bg);color:var(--white);line-height:1.6;overflow-x:hidden}
+    :root{
+      --white:#FFFFFF;--off:#FAFAF9;--bg:#F5F4F0;
+      --ink:#0F0F0F;--ink-2:#3D3D3D;--ink-3:#787878;--ink-4:#ABABAB;
+      --border:#E4E2DC;--border-dark:#C8C5BC;
+      --accent:#1A6B3C;--accent-bg:#EBF5EF;
+      --serif:'Instrument Serif',Georgia,serif;
+      --sans:'DM Sans',system-ui,sans-serif;
+      --mono:'JetBrains Mono','Courier New',monospace;
+      --shadow:0 1px 3px rgba(0,0,0,0.06),0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md:0 4px 12px rgba(0,0,0,0.08),0 2px 4px rgba(0,0,0,0.04);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);background:var(--white);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
     a{text-decoration:none;color:inherit}
-    .nav{position:fixed;top:0;left:0;right:0;z-index:100;height:64px;padding:0 40px;display:flex;align-items:center;justify-content:space-between;background:rgba(6,12,23,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-    .nav-logo{display:flex;align-items:center;gap:10px;font-size:1.1rem;font-weight:700}
-    .logo-ai{color:var(--purple)}
-    .nav-cta{background:var(--purple);color:white;padding:8px 18px;border-radius:8px;font-size:0.85rem;font-weight:600}
-    .container{max-width:900px;margin:0 auto;padding:0 24px}
-    .blog-index-hero{padding:110px 24px 52px;text-align:center}
-    .eyebrow{display:inline-block;font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--purple);margin-bottom:12px}
-    h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:12px}
-    .sub{font-size:1rem;color:rgba(255,255,255,0.5);max-width:480px;margin:0 auto}
-    .articles{padding:20px 24px 80px;max-width:900px;margin:0 auto;display:grid;gap:20px}
-    .article-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 32px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;transition:all 0.2s}
-    .article-card:hover{border-color:rgba(124,58,237,0.35);transform:translateY(-2px)}
-    .ac-cat{font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#A78BFA;margin-bottom:8px}
-    .ac-title{font-size:1.1rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:8px;line-height:1.35}
-    .ac-desc{font-size:0.86rem;color:rgba(255,255,255,0.5);line-height:1.65;margin-bottom:12px}
-    .ac-meta{font-size:0.75rem;color:var(--muted);display:flex;gap:14px}
-    .ac-read{display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;font-weight:600;color:#A78BFA;white-space:nowrap}
-    .ac-read:hover{color:#C4B5FD}
-    .coming-soon{background:rgba(255,255,255,0.02);border:1px dashed rgba(255,255,255,0.1);border-radius:16px;padding:28px 32px;text-align:center;color:var(--muted);font-size:0.88rem}
-    .blog-footer{border-top:1px solid var(--border);padding:32px 24px;text-align:center;font-size:0.85rem;color:var(--muted)}
-    .blog-footer a{color:#A78BFA}
-    @media(max-width:600px){.nav{padding:0 16px}.article-card{grid-template-columns:1fr}.ac-read{display:none}}
+
+    /* NAV */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 40px}
+    .nav-logo{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-size:1.1rem;color:var(--ink)}
+    .logo-mark{width:26px;height:26px;background:var(--ink);border-radius:6px;display:flex;align-items:center;justify-content:center}
+    .logo-mark svg{width:14px;height:14px}
+    .logo-ai{color:var(--accent)}
+    .nav-right{display:flex;align-items:center;gap:20px}
+    .nav-back{font-size:.83rem;color:var(--ink-3);display:flex;align-items:center;gap:5px;transition:color .15s}
+    .nav-back:hover{color:var(--ink)}
+    .nav-cta{background:var(--ink);color:var(--white);padding:7px 16px;border-radius:7px;font-size:.83rem;font-weight:500;transition:background .15s}
+    .nav-cta:hover{background:#333}
+
+    /* HERO */
+    .blog-hero{padding:100px 0 64px;border-bottom:1px solid var(--border);background:var(--off)}
+    .container{max-width:900px;margin:0 auto;padding:0 32px}
+    .eyebrow{font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:12px;display:block}
+    .blog-hero h1{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:400;line-height:1.12;letter-spacing:-.02em;margin-bottom:14px}
+    .blog-hero h1 em{font-style:italic;color:var(--accent)}
+    .blog-hero p{font-size:1rem;color:var(--ink-3);max-width:480px;line-height:1.7}
+
+    /* ARTICLES */
+    .articles{padding:56px 0 80px}
+    .articles-grid{display:flex;flex-direction:column;gap:0}
+
+    .article-card{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start;padding:32px 0;border-bottom:1px solid var(--border);transition:all .15s;cursor:pointer}
+    .article-card:first-child{border-top:none}
+    .article-card:hover .ac-title{color:var(--accent)}
+    .ac-meta-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+    .ac-cat{font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-bg);padding:3px 9px;border-radius:4px;border:1px solid rgba(26,107,60,.15)}
+    .ac-read-time{font-size:.75rem;color:var(--ink-4)}
+    .ac-title{font-family:var(--serif);font-size:1.4rem;font-weight:400;line-height:1.25;letter-spacing:-.01em;margin-bottom:10px;transition:color .15s}
+    .ac-desc{font-size:.88rem;color:var(--ink-3);line-height:1.7;margin-bottom:14px;max-width:560px}
+    .ac-footer{display:flex;align-items:center;gap:16px}
+    .ac-author{display:flex;align-items:center;gap:8px}
+    .ac-avatar{width:26px;height:26px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center}
+    .ac-avatar svg{width:14px;height:14px}
+    .ac-author-name{font-size:.78rem;color:var(--ink-3)}
+    .ac-date{font-size:.78rem;color:var(--ink-4)}
+    .ac-arrow{font-size:1.4rem;color:var(--ink-4);transition:all .2s;flex-shrink:0;align-self:center}
+    .article-card:hover .ac-arrow{color:var(--accent);transform:translateX(4px)}
+
+    /* COMING SOON */
+    .coming-soon{padding:40px 0;text-align:center;color:var(--ink-4);font-size:.88rem;border-bottom:1px solid var(--border)}
+    .coming-soon a{color:var(--accent);border-bottom:1px solid rgba(26,107,60,.25)}
+
+    /* NEWSLETTER */
+    .newsletter{padding:56px 0;background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .newsletter-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+    .newsletter h3{font-family:var(--serif);font-size:1.4rem;font-weight:400;margin-bottom:6px}
+    .newsletter p{font-size:.88rem;color:var(--ink-3)}
+    .nl-form{display:flex;gap:10px;flex-wrap:wrap}
+    .nl-input{flex:1;min-width:220px;padding:10px 14px;background:var(--white);border:1px solid var(--border-dark);border-radius:8px;font-family:var(--sans);font-size:.9rem;color:var(--ink);outline:none;transition:border-color .15s}
+    .nl-input:focus{border-color:var(--ink)}
+    .nl-input::placeholder{color:var(--ink-4)}
+    .nl-btn{background:var(--ink);color:var(--white);padding:10px 20px;border:none;border-radius:8px;font-family:var(--sans);font-size:.88rem;font-weight:500;cursor:pointer;white-space:nowrap;transition:background .15s}
+    .nl-btn:hover{background:#333}
+
+    /* FOOTER */
+    .footer{padding:36px 0;border-top:1px solid var(--border)}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+    .footer-copy{font-size:.78rem;color:var(--ink-4)}
+    .footer-links{display:flex;gap:20px}
+    .footer-links a{font-size:.78rem;color:var(--ink-3);transition:color .15s}
+    .footer-links a:hover{color:var(--ink)}
+
+    @media(max-width:768px){
+      .nav{padding:0 20px}
+      .article-card{grid-template-columns:1fr}
+      .ac-arrow{display:none}
+      .newsletter-inner{flex-direction:column;text-align:center}
+      .nl-form{width:100%}
+    }
   </style>
 </head>
 <body>
 
   <nav class="nav">
     <a href="/" class="nav-logo">
-      <svg width="30" height="30" viewBox="0 0 38 38" fill="none">
-        <rect width="38" height="38" rx="9" fill="url(#bl2)"/>
-        <path d="M9 11L19 11L19 15L13 15L13 27L9 27Z" fill="white"/>
-        <path d="M17 11L29 11L29 15L25 15L25 27L21 27L21 15L17 15Z" fill="rgba(255,255,255,0.5)"/>
-        <circle cx="27" cy="25" r="3.5" fill="#00FFB2"/>
-        <defs><linearGradient id="bl2" x1="0" y1="0" x2="38" y2="38"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#2563EB"/></linearGradient></defs>
-      </svg>
+      <div class="logo-mark">
+        <svg viewBox="0 0 16 16" fill="none">
+          <path d="M2 3h6v2H5v8H3V5H2V3z" fill="white"/>
+          <path d="M7 3h7v2h-2v8h-2V5H7V3z" fill="rgba(255,255,255,0.6)"/>
+          <circle cx="13" cy="12" r="2" fill="#00FFB2"/>
+        </svg>
+      </div>
       TruLogic<span class="logo-ai">AI</span>
     </a>
-    <a href="/#contact" class="nav-cta">Get Early Access</a>
+    <div class="nav-right">
+      <a href="/" class="nav-back">← Back to site</a>
+      <a href="/#contact" class="nav-cta">Get Early Access</a>
+    </div>
   </nav>
 
-  <div class="blog-index-hero">
-    <div class="eyebrow">TruLogic AI Blog</div>
-    <h1>AI Insights for Indian Businesses</h1>
-    <p class="sub">Practical guides on support automation, document AI, business data intelligence and responsible AI — written for founders, IT heads and operations teams.</p>
+  <div class="blog-hero">
+    <div class="container">
+      <span class="eyebrow">TruLogic AI Blog</span>
+      <h1>Practical AI insights<br/>for <em>every business.</em></h1>
+      <p>Guides on support automation, document AI, business data intelligence and responsible AI — written for founders, IT heads and operations teams.</p>
+    </div>
   </div>
 
-  <div class="articles">
+  <section class="articles">
+    <div class="container">
+      <div class="articles-grid">
 
-    <a href="/blog/support-tickets-tech-startups.html" class="article-card">
-      <div>
-        <div class="ac-cat">💡 IT Support · For Tech Startups</div>
-        <div class="ac-title">How Indian Tech Startups Are Drowning in Support Tickets — And What Actually Fixes It</div>
-        <div class="ac-desc">IT support tickets are killing productivity at Indian startups. Here's exactly what's going wrong with the usual fixes — and how AI automation reduces ticket volume by 80% without expensive tools.</div>
-        <div class="ac-meta">
-          <span>📅 June 2025</span>
-          <span>⏱ 6 min read</span>
+        <a href="/blog/support-tickets-tech-startups.html" class="article-card">
+          <div>
+            <div class="ac-meta-top">
+              <span class="ac-cat">IT Support</span>
+              <span class="ac-read-time">⏱ 6 min read</span>
+            </div>
+            <div class="ac-title">How Tech Startups Are Drowning in Support Tickets — And What Actually Fixes It</div>
+            <div class="ac-desc">IT support tickets are killing productivity. Here's exactly what's going wrong with the usual fixes — and how AI automation reduces ticket volume by 80% without expensive tools.</div>
+            <div class="ac-footer">
+              <div class="ac-author">
+                <div class="ac-avatar">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M2 3h6v2H5v8H3V5H2V3z" fill="white"/>
+                    <path d="M7 3h7v2h-2v8h-2V5H7V3z" fill="rgba(255,255,255,0.6)"/>
+                  </svg>
+                </div>
+                <span class="ac-author-name">TruLogic AI Team</span>
+              </div>
+              <span class="ac-date">June 2025</span>
+            </div>
+          </div>
+          <div class="ac-arrow">→</div>
+        </a>
+
+        <div class="coming-soon">
+          More articles coming soon — <a href="/#contact">get notified when we publish</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div>
+          <h3>Get new articles in your inbox.</h3>
+          <p>No spam. Just practical AI guides when we publish them.</p>
+        </div>
+        <div class="nl-form">
+          <input type="email" class="nl-input" placeholder="your@email.com" />
+          <button class="nl-btn" onclick="handleNL(event)">Subscribe</button>
         </div>
       </div>
-      <span class="ac-read">Read Article →</span>
-    </a>
-
-    <div class="coming-soon">
-      📝 &nbsp; More articles coming soon — <a href="/#contact">subscribe to get notified</a>
     </div>
+  </section>
 
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-copy">© 2025 TruLogic AI</div>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/#products">Products</a>
+          <a href="/#contact">Contact</a>
+          <a href="mailto:sales@trulogicai.com">sales@trulogicai.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  <div class="blog-footer">
-    <a href="/">← Back to TruLogic AI</a> &nbsp;·&nbsp; <a href="mailto:sales@trulogicai.com">sales@trulogicai.com</a>
-  </div>
+  <script>
+    function handleNL(e) {
+      const input = e.target.previousElementSibling;
+      if (input.value && input.value.includes('@')) {
+        window.location.href = `mailto:sales@trulogicai.com?subject=Blog subscription&body=Please add me to your blog list: ${input.value}`;
+      }
+    }
+  </script>
 
 </body>
 </html>
